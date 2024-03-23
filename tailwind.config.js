@@ -11,11 +11,13 @@ export default {
       // "2xl": "1536px",
       "2xl": "1400px",
     },
-    colors: {
-      "neutral-100": "#f2f2f2",
-      "neutral-500": "#636363",
+
+    extend: {
+      colors: {
+        "neutral-100": "#f2f2f2",
+        "neutral-500": "#636363",
+      },
     },
-    extend: {},
   },
   plugins: [],
 };
