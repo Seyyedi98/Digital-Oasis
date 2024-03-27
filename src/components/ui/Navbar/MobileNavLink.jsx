@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 function MobileNavLink({ title, to }) {
   return (
-    <li className="flex items-center justify-between px-2 pb-2">
+    <div className="flex cursor-pointer items-center justify-between px-2 pb-4 duration-300 hover:text-red-500">
       <Link to={to}>{title}</Link>
-    </li>
+    </div>
   );
 }
 
