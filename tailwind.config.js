@@ -16,6 +16,7 @@ export default {
       colors: {
         "neutral-100": "#f2f2f2",
         "neutral-500": "#636363",
+        "red-600": "#f03333",
       },
     },
   },
