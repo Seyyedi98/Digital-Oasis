@@ -11,7 +11,7 @@ function Sidebar({ isOpen, setIsOpen }) {
 
   return (
     <div
-      className={`${isOpen ? "left-0" : "-left-full"} fixed top-0 h-screen w-[70%] bg-white shadow transition-all duration-1000`}
+      className={`${isOpen ? "left-0" : "-left-full"} fixed top-0 h-screen w-[70%] overflow-scroll overscroll-y-auto bg-white shadow transition-all duration-1000`}
     >
       <div>
         <div className="flex h-[55px] items-center justify-end bg-red-600 px-4 text-sm">
@@ -26,7 +26,7 @@ function Sidebar({ isOpen, setIsOpen }) {
           </div>
         </div>
 
-        <div className="flex overflow-hidden transition-all duration-1000">
+        <div className="flex transition-all duration-1000	">
           {/* main menu */}
           <div
             className={`${isSubMenuOpen ? "pointer-events-none w-0 -translate-x-full opacity-0" : "w-full "} transition-all duration-700 `}
@@ -50,7 +50,7 @@ function Sidebar({ isOpen, setIsOpen }) {
 
           {/* shop submenu */}
           <div
-            className={`${isSubMenuOpen ? "w-full px-4 py-6" : "pointer-events-none w-0 translate-x-full opacity-0"} transition-all duration-700 `}
+            className={`${isSubMenuOpen ? "w-full px-4 py-6" : "pointer-events-none w-0 translate-x-full opacity-0"} transition-all duration-700`}
           >
             <div className="flex items-center justify-between">
               <i
@@ -63,7 +63,7 @@ function Sidebar({ isOpen, setIsOpen }) {
               <div></div>
             </div>
             <ul
-              className="flex flex-col gap-4 px-3 py-12 text-xs font-medium text-gray-800
+              className="flex flex-col gap-4 px-3 pt-12 text-xs font-medium text-gray-800
             [&>*]:border-b-[1px] [&>*]:border-solid [&>*]:border-gray-100"
             >
               <MobileDropNavLink title="Mobile" to="/shop">
